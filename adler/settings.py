@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'adler.news',
     'adler.siteconfig',
+    'adler.website',
 ]
 
 MIDDLEWARE = [
