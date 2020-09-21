@@ -15,6 +15,7 @@ class News(models.Model):
 
     class Meta:
         db_table = 'all_news'
+        verbose_name_plural = "All news"
     
     def save(self, *args, **kwargs):
         if not self.pub_date:
