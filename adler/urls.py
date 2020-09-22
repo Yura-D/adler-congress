@@ -4,6 +4,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('', include('adler.website.urls')),
     path('news/', include('adler.news.urls')),
     path('admin/', admin.site.urls),
 ]

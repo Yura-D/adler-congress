@@ -1,0 +1,13 @@
+<h1>{{ "Start of Adler congres" }}</h1>
+
+{% if some_list %}
+    <ul>
+    {% for element in some_list %}
+        <li><a>{{ element }}
+        </a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No list are available</p>
+{% endif %}
+<p><a href="{% url 'program' %}">Program</a></p>
