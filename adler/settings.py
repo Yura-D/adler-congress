@@ -57,7 +57,7 @@ ROOT_URLCONF = 'adler.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['adler/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,3 +1,7 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
 <h1>{{ "Start of Adler congres" }}</h1>
 
 {% if some_list %}
@@ -11,3 +15,5 @@
     <p>No list are available</p>
 {% endif %}
 <p><a href="{% url 'program' %}">Program</a></p>
+
+{% endblock %}
