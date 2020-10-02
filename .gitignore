@@ -137,3 +137,10 @@ dmypy.json
 
 # Info file
 info.txt
+
+# info dir
+info/
+
+# static_colected files
+static_colected/
+
