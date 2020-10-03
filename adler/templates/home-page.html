@@ -11,7 +11,7 @@
       <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+        <a class="navbar-brand waves-effect" href="{% url 'index' %}">
           <strong class="black-text">IAIP 2021</strong>
         </a>
 
@@ -52,18 +52,12 @@
           </ul>
 
           <!-- Right -->
-          <ul class="navbar-nav nav-flex-icons">
+          <ul class="navbar-nav nav-flex-icons" style="margin-right: 15px">
             <li class="nav-item">
               <a href="" class="nav-link border border-light rounded waves-effect">
                 Abstracts
               </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
-                <i class="fab"></i>
-              </a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item" style="margin-left: 15px">
               <a href="" class="nav-link border border-light rounded waves-effect"
                 target="_blank">
                 Registrations
