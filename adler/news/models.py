@@ -21,3 +21,9 @@ class News(models.Model):
         if not self.pub_date:
             self.pub_date = timezone.now()
         super().save(*args, **kwargs)
+
+    def get_preview(self):
+        if len(self.text) >= 500:
+            return self.text[:500] + ' ...'
+        else:
+            return self.text[:500]
