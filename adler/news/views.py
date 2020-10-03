@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import News
 
 
 def news(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    context = {
+        'news': News.objects.all()
+    }
+    print(context)
+    return render(request, 'post-page.html', context)
