@@ -9,6 +9,7 @@ media/
 __pycache__/
 *.py[cod]
 *$py.class
+*py.swp
 
 # C extensions
 *.so
@@ -142,4 +143,4 @@ info.txt
 info/
 
 # static_colected files
-static_colected/
+static_collected/
