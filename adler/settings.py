@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'adler.news',
     'adler.siteconfig',
     'adler.website',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
