@@ -36,5 +36,3 @@ class ImagesAdmin(admin.ModelAdmin):
 
     def image_path(self, obj):
         return obj.photo
-
-
