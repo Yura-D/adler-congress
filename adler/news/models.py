@@ -10,7 +10,6 @@ class News(models.Model):
     pub_date = models.DateTimeField('Published date', null=True, blank=True)
     title = models.CharField('News title', max_length=255)
     text = models.TextField('Content')
-    photo = models.ImageField(upload_to=upload_handler, null=True, blank=True)
     show = models.BooleanField(default=True)
 
     class Meta:
@@ -27,3 +26,11 @@ class News(models.Model):
             return self.text[:500] + ' ...'
         else:
             return self.text[:500]
+
+
+class Image(models.Model):
+    photo = models.ImageField(upload_to=upload_handler, null=True, blank=True)
+    title = models.CharField(max_length=255, null=True, blank=True)
+
+    class Meta:
+        db_table = 'images'
